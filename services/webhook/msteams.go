@@ -289,7 +289,7 @@ func (m *MSTeamsPayload) Release(p *api.ReleasePayload) (api.Payloader, error) {
 		p.Repository,
 		p.Sender,
 		title,
-		"",
+		p.Release.Note,
 		p.Release.HTMLURL,
 		color,
 		&MSTeamsFact{"Tag:", p.Release.TagName},
